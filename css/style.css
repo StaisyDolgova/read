@@ -119,48 +119,35 @@ pre {
     user-select: none;
 }
 .color_red,
-.userpic1,
-.media_call .fill,
-.media_file .fill,
-.media_live_location .fill {
+.userpic1{
     background-color: #ff5555;
 }
 .color_green,
-.userpic2,
-.media_call.success .fill,
-.media_photo .fill {
+.userpic2 {
     background-color: #64bf47;
 }
 .color_yellow,
-.userpic3,
-.media_venue .fill {
+.userpic3{
     background-color: #ffab00;
 }
 .color_blue,
-.userpic4,
-.media_audio_file .fill,
-.media_voice_message .fill {
+.userpic4 {
     background-color: #4f9cd9;
 }
 .color_purple,
-.userpic5,
-.media_game .fill {
+.userpic5{
     background-color: #9884e8;
 }
 .color_pink,
-.userpic6,
-.media_invoice .fill {
+.userpic6 {
     background-color: #e671a5;
 }
 .color_sea,
-.userpic7,
-.media_location .fill,
-.media_video .fill {
+.userpic7 {
     background-color: #47bcd1;
 }
 .color_orange,
-.userpic8,
-.media_contact .fill {
+.userpic8 {
     background-color: #ff8c44;
 }
 .personal_info {
@@ -256,7 +243,6 @@ div.selected {
 .service {
     padding: 10px 24px;
 }
-
 .service .userpic_wrap {
     padding-top: 10px;
 }
@@ -290,102 +276,14 @@ div.selected {
     word-wrap: break-word;
     line-height: 150%;
 }
-.default .reply_to,
-.default .media_wrap {
+.default .reply_to {
     padding-bottom: 5px;
-}
-.default .media {
-    margin: 0 -10px;
-    padding: 5px 10px;
-}
-.default .media .fill,
-.default .media .thumb {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-}
-.default .media .fill {
-    background-repeat: no-repeat;
-    background-position: 12px 12px;
-    background-size: 24px 24px;
-}
-.default .media .title,
-.default .media_poll .question {
-    padding-top: 4px;
-    font-size: 14px;
-}
-.default .media .description {
-    color: #000000;
-    padding-top: 4px;
-    font-size: 13px;
-}
-.default .media .status {
-    padding-top: 4px;
-    font-size: 13px;
-}
-.default .video_file_wrap,
-.default .animated_wrap {
-    position: relative;
-}
-.default .video_file,
-.default .animated,
-.default .photo,
-.default .sticker {
-    display: block;
-}
-.video_duration {
-    background: rgba(0, 0, 0, .4);
-    padding: 0px 5px;
-    position: absolute;
-    z-index: 2;
-    border-radius: 2px;
-    right: 3px;
-    bottom: 3px;
-    color: #ffffff;
-    font-size: 11px;
-}
-.video_play_bg {
-    background: rgba(0, 0, 0, .4);
-    width: 40px;
-    height: 40px;
-    line-height: 0;
-    position: absolute;
-    z-index: 2;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: -20px auto 0 -20px;
-    top: 50%;
-    left: 50%;
-    pointer-events: none;
-}
-.video_play {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-    margin-left: -5px;
-    margin-top: -9px;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 9px 0 9px 14px;
-    border-color: transparent transparent transparent #fff;
-}
-.gif_play {
-    font-weight: 700;
-    color: #FFF;
-    display: block;
-    line-height: 40px;
-    font-size: 13px;
-    text-align: center;
 }
 .pagination {
     text-align: center;
     padding: 20px;
     font-size: 16px;
 }
-
 .toast_container {
     position: fixed;
     left: 50%;
@@ -405,7 +303,12 @@ div.toast_shown {
     opacity: 1;
     transition: opacity 0.4s ease;
 }
-
+.link__togit {
+    display: block;
+}
+.link__togit:visited {
+    color: red;
+}
 .section.calls {
     background-image: url(../images/section_calls.png);
 }
@@ -433,39 +336,6 @@ div.toast_shown {
 .page_header a.content {
     background-image: url(../images/back.png);
 }
-.media_call .fill {
-    background-image: url(../images/media_call.png)
-}
-.media_contact .fill {
-    background-image: url(../images/media_contact.png)
-}
-.media_file .fill {
-    background-image: url(../images/media_file.png)
-}
-.media_game .fill {
-    background-image: url(../images/media_game.png)
-}
-.media_live_location .fill,
-.media_location .fill,
-.media_venue .fill {
-    background-image: url(../images/media_location.png)
-}
-.media_audio_file .fill {
-    background-image: url(../images/media_music.png)
-}
-.media_invoice .fill {
-    background-image: url(../images/media_shop.png)
-}
-.media_voice_message .fill {
-    background-image: url(../images/media_voice.png)
-}
-.media_photo .fill {
-    background-image: url(../images/media_photo.png)
-}
-.media_video .fill {
-    background-image: url(../images/media_video.png)
-}
-
 @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
 .section.calls {
     background-image: url(../images/section_calls@2x.png);
@@ -493,37 +363,5 @@ div.toast_shown {
 }
 .page_header a.content {
     background-image: url(../images/back@2x.png);
-}
-.media_call .fill {
-    background-image: url(../images/media_call@2x.png)
-}
-.media_contact .fill {
-    background-image: url(../images/media_contact@2x.png)
-}
-.media_file .fill {
-    background-image: url(../images/media_file@2x.png)
-}
-.media_game .fill {
-    background-image: url(../images/media_game@2x.png)
-}
-.media_live_location .fill,
-.media_location .fill,
-.media_venue .fill {
-    background-image: url(../images/media_location@2x.png)
-}
-.media_audio_file .fill {
-    background-image: url(../images/media_music@2x.png)
-}
-.media_invoice .fill {
-    background-image: url(../images/media_shop@2x.png)
-}
-.media_voice_message .fill {
-    background-image: url(../images/media_voice@2x.png)
-}
-.media_photo .fill {
-    background-image: url(../images/media_photo@2x.png)
-}
-.media_video .fill {
-    background-image: url(../images/media_video@2x.png)
 }
 }
